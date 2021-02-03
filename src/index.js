@@ -6,47 +6,47 @@ import reportWebVitals from './reportWebVitals';
 
 //============================   테스트 공간   ===============================
 
-class EventExample extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      btnEnable : true
+// class EventExample extends React.Component {
+//   constructor(props){
+//     super(props);
+//     this.state = {
+//       btnEnable : true
      
-    }
+//     }
     
-    // () => 이런 방식 대체용 bind
-    //this.clcikEvent = this.clcikEvent.bind(this);
-  }
+//     // () => 이런 방식 대체용 bind
+//     //this.clcikEvent = this.clcikEvent.bind(this);
+//   }
 
 
-  clcikEvent = () => {
-    this.setState(state => ({
-      btnEnable : !this.state.btnEnable
-    } ))    
-  }
+//   clcikEvent = () => {
+//     this.setState(state => ({
+//       btnEnable : !this.state.btnEnable
+//     } ))    
+//   }
   
-  render(){
-    return(
-      <button onClick={this.clcikEvent}>
-        {this.state.btnEnable ? 'ON' : 'OFF'}
-      </button>
-    )
-  }
+//   render(){
+//     return(
+//       <button onClick={this.clcikEvent}>
+//         {this.state.btnEnable ? 'ON' : 'OFF'}
+//       </button>
+//     )
+//   }
   
-}
+// }
 
 
-ReactDOM.render(<EventExample />,document.getElementById('root'))
+// ReactDOM.render(<EventExample />,document.getElementById('root'))
 
 
 //============================   테스트 공간   ===============================
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
